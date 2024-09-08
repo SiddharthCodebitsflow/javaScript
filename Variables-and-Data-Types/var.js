@@ -1,6 +1,6 @@
 /*
 
-1. let,var,const use for declear the variable but different beviour with scope or assigne the value.
+1. let use for declear the variable but different behaviour with scope or assigne the value.
 
         i. var, functions scpoe , hosted , re-declearation 
 
