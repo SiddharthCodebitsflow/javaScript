@@ -76,3 +76,26 @@ function Timer() {
 }
 
 const timer = new Timer();
+
+
+// ******* Limitations **************** 
+
+const car = {
+  speed: 100,
+  accelerate: () => {
+      console.log(this.speed);  // `this` is not the car object, so this will be `undefined`
+  }
+};
+car.accelerate();  // Outputs: undefined
+
+
+
+const card = {
+  speed: 100,
+  accelerate: function() {
+      console.log(this.speed);  // Correctly refers to the car object
+  }
+};
+card.accelerate();  // Outputs: 100
+
+
